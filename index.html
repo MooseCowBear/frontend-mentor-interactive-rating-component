@@ -18,35 +18,57 @@
   </style>
 </head>
 <body>
+  <main>
+    <!-- Rating state start -->
+    <section class="rating-state" role="region">
+      <img src="./images/icon-star.svg" alt="star icon">
+      <h1>How did we do?</h1>
 
-  <!-- Rating state start -->
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
 
-  How did we do?
+      <div class="ratings-wrapper">
+        <div class="rating-option">
+          <input type="radio" id="one" name="rating" value="1">
+          <label for="one">1</label>
+        </div>
+        <div class="rating-option">
+          <input type="radio" id="two" name="rating" value="2">
+          <label for="two">2</label>
+        </div>
+        <div class="rating-option">
+          <input type="radio" id="three" name="rating" value="3">
+          <label for="three">3</label>
+        </div>
+        <div class="rating-option">
+          <input type="radio" id="four" name="rating" value="4">
+          <label for="four">4</label>
+        </div>
+        <div class="rating-option">
+          <input type="radio" id="five" name="rating" value="5">
+          <label for="five">5</label>
+        </div>
+      </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <button>Submit</button>
+    </section>
+    <!-- Rating state end -->
 
-  1 2 3 4 5
+    <!-- Thank you state start -->
+    <section class="thank-you-state" role="region">
+      <img src="./images/illustration-thank-you.svg" alt="receipt illustration">
+      <p>You selected <span id="rating-value"></span> out of 5<p>
 
-  Submit
+      <h2>Thank you!</h2>
 
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+    </section>
+    <!-- Thank you state end -->
+  </main>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">MooseCowBear</a>.
+</footer>
 </body>
 </html>
