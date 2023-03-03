@@ -3,7 +3,7 @@
     --text-light: hsl(0, 0%, 100%);
     --text-medium: hsl(217, 12%, 63%);
     --highlight-neutral: hsl(216, 12%, 54%);
-    --hightlight-netural-dark: hsl(213, 19%, 18%);
+    --background-lighter: hsl(213, 19%, 18%);
     --background: hsl(216, 12%, 8%);
 }
 
@@ -61,3 +61,139 @@ a:not([class]) {
 }
 /* end reset */
 
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    color: var(--text-medium);
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: hsla(213, 19%, 18%, 60%);;
+    max-width: 26em;
+    max-height: 26em;
+    border-radius: 25px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-state {
+    display: none; /*flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 100%;
+    gap: 1em;
+}
+
+h1 {
+    color: var(--text-light);
+    font-size: 1.7em;
+}
+.circle, .rating-option {
+    height: 3rem;
+    width: 3rem;;
+    border-radius: 50%;
+    background-color: var(--background-lighter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratings-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 100%;
+    padding: 0.7em;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--highlight);
+    color: var(--text-light);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 1em;
+}
+
+button:hover, button:focus {
+    background-color: var(--text-light);
+    color: var(--highlight);
+    cursor: pointer;
+}
+
+.rating-option {
+    position: relative;
+}
+
+.rating-option:hover, .rating-option:focus-within {
+    background-color: var(--highlight);
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+label {
+    position: absolute;
+    bottom: 20%;
+}
+
+input {
+    visibility: hidden;
+}
+
+.active { /*for whichever radio button is checked, added with script */
+    background-color: var(--text-medium);
+    color: var(--text-light);
+}
+
+.thank-you-state {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 0.8em;
+    text-align: center;
+}
+
+.ratings-summary {
+    background-color: var(--background-lighter);
+    padding: 0.5em 1em 0.3em;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    margin-top: 1em;
+}
+
+.thank-you-state > .ratings-summary > p {
+    color: var(--highlight);
+}
+
+h2 {
+    color: var(--text-light);
+    font-size: 1.8em;
+    margin: 0.8em 0 0;
+    
+}
+
+.thank-you-state p {
+    font-size: 0.95em;
+    margin: 0 0.4em;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: var(--text-medium); 
+}

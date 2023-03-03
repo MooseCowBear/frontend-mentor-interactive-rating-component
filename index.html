@@ -10,54 +10,52 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main>
     <!-- Rating state start -->
     <section class="rating-state" role="region">
-      <img src="./images/icon-star.svg" alt="star icon">
+      <div class="circle">
+        <img src="./images/icon-star.svg" alt="star icon">
+      </div>
       <h1>How did we do?</h1>
 
       <p>Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
-
-      <div class="ratings-wrapper">
-        <div class="rating-option">
-          <input type="radio" id="one" name="rating" value="1">
-          <label for="one">1</label>
+      <form novalidate>
+        <div class="ratings-wrapper">
+          <div class="rating-option">
+            <input type="radio" id="one" name="rating" value="1">
+            <label for="one">1</label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" id="two" name="rating" value="2">
+            <label for="two">2</label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" id="three" name="rating" value="3">
+            <label for="three">3</label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" id="four" name="rating" value="4">
+            <label for="four">4</label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" id="five" name="rating" value="5">
+            <label for="five">5</label>
+          </div>
         </div>
-        <div class="rating-option">
-          <input type="radio" id="two" name="rating" value="2">
-          <label for="two">2</label>
-        </div>
-        <div class="rating-option">
-          <input type="radio" id="three" name="rating" value="3">
-          <label for="three">3</label>
-        </div>
-        <div class="rating-option">
-          <input type="radio" id="four" name="rating" value="4">
-          <label for="four">4</label>
-        </div>
-        <div class="rating-option">
-          <input type="radio" id="five" name="rating" value="5">
-          <label for="five">5</label>
-        </div>
-      </div>
-
-      <button>Submit</button>
+        <button>Submit</button> 
+      </form>
     </section>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
     <section class="thank-you-state" role="region">
       <img src="./images/illustration-thank-you.svg" alt="receipt illustration">
-      <p>You selected <span id="rating-value"></span> out of 5<p>
+      <div class="ratings-summary">
+        <p>You selected <span id="rating-value"></span> out of 5<p>
+      </div>
 
       <h2>Thank you!</h2>
 
