@@ -3,7 +3,6 @@ let submittedRating;
 const submitBtn = document.querySelector("button");
 
 submitBtn.addEventListener("click", (event) => {
-    event.stopPropagation();
     console.log("button was clicked");
     if (submittedRating !== undefined){
         displayThankYou();
