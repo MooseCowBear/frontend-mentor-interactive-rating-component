@@ -19,8 +19,8 @@ Users should be able to:
 
 ## Links
 
-- [Solution](https://github.com/MooseCowBear/frontend-mentor-intro-component-signup-form)
-- [Live](https://moosecowbear.github.io/frontend-mentor-intro-component-signup-form/)
+- [Solution](https://github.com/MooseCowBear/frontend-mentor-interactive-rating-component)
+- [Live](https://moosecowbear.github.io/frontend-mentor-interactive-rating-component/)
 
 ## Built with
 
